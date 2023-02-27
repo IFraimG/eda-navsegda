@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/item_store">
+
+    <ImageView
+        android:id="@+id/logo_types_store"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_store_title"
+            android:textSize="32dp"
+            android:text="Вся еда"
+            android:textColor="@color/black"
+            app:fontFamily="sans-serif-medium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_store_description"
+            android:textSize="14dp"
+            android:text="Включает 0 видов продуктов"
+            android:textColor="@color/black"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">edanavsegda</string>
+    <string name="user_btm_menu_home">Главная</string>
+    <string name="user_btm_menu_ads">Объявления</string>
+    <string name="user_btm_menu_products">Продукты</string>
+    <string name="user_btm_menu_profile">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
