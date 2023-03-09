@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         app:itemBackground="@color/custom_gray_light"
         app:itemTextColor="@color/custom_text_menu_color"
-        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

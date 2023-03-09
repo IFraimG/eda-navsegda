@@ -1,5 +1,6 @@
 package com.example.edanavsegda.models;
 
+// в бд не существует
 public class StoreFood {
     public String title = "";
     public int logo;

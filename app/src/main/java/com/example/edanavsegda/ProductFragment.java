@@ -2,31 +2,27 @@ package com.example.edanavsegda;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 
+import com.example.edanavsegda.activities.ProductFind;
 import com.example.edanavsegda.adapters.StoreFoodAdapter;
 import com.example.edanavsegda.models.StoreFood;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class ProductFragment extends Fragment {
@@ -61,19 +57,15 @@ public class ProductFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-    }
-
-    @Override
     public void onStart() {
         super.onStart();
 
+        Button btnAddProducts = getView().findViewById(R.id.add_products);
         btn = (Button) getView().findViewById(R.id.chooseStore);
         btn.setText(currentStoreFood.title);
-        btn.setOnClickListener(View -> {
-            createModal();
-        });
+
+        btn.setOnClickListener(View -> createModal());
+        btnAddProducts.setOnClickListener(View -> addProduct());
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -97,22 +89,17 @@ public class ProductFragment extends Fragment {
         recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
             @Override
             public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-                try {
-                    View childView = rv.findChildViewUnder(e.getX(), e.getY());
-                    if (childView != null) {
-                        int pos = rv.getChildAdapterPosition(childView);
-                        currentStoreFood = typeOfStore.get(pos);
-                        btn.setText(currentStoreFood.title);
-                    }
-                    dialog.dismiss();
-                } catch (IllegalStateException err) {
-                    Log.i("msg", err.toString());
+                View childView = rv.findChildViewUnder(e.getX(), e.getY());
+                if (childView != null) {
+                    int pos = rv.getChildAdapterPosition(childView);
+                    currentStoreFood = typeOfStore.get(pos);
+                    btn.setText(currentStoreFood.title);
                 }
+                dialog.dismiss();
                 return false;
             }
             @Override
             public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {}
-
             @Override
             public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {}
         });
@@ -120,5 +107,10 @@ public class ProductFragment extends Fragment {
         dialogBuilder.setView(recyclerView);
         dialog = dialogBuilder.create();
         dialog.show();
+    }
+
+    public void addProduct() {
+        Intent intent = new Intent(getActivity(), ProductFind.class);
+        startActivity(intent);
     }
 }

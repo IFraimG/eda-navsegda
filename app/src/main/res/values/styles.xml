@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Widget.Material3.BottomNavigationView.ActiveIndicator"></style>
-    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-<!--        <item name="itemIconTint">@color/custom_gray_light</item>-->
-<!--        <item name="itemTextColor">@color/white</item>-->
-<!--        app:itemBackground="@color/custom_gray_light"-->
-<!--        app:itemIconTint="@color/custom_green"-->
-<!--        app:itemActiveIndicatorStyle=""-->
-    </style>
+
 </resources>

@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_productFragment_to_alert_store"
             app:destination="@id/alert_store" />
+        <action
+            android:id="@+id/action_productFragment_to_productFind"
+            app:destination="@id/productFind" />
     </fragment>
     <dialog
         android:id="@+id/alert_store"
@@ -32,4 +35,14 @@
             android:id="@+id/action_alert_store_to_productFragment"
             app:destination="@id/productFragment" />
     </dialog>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.edanavsegda.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/productFind"
+        android:name="com.example.edanavsegda.activities.ProductFind"
+        android:label="fragment_product_find"
+        tools:layout="@layout/fragment_product_find" />
 </navigation>

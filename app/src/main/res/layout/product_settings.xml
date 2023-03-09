@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ProductSettings">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:onClick="returnFoundProduct"
+            android:background="@drawable/custom_round_border"
+            app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+        <TextView
+            android:id="@+id/productTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Добавить продукт"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            app:fontFamily="monospace" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/product_title_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_round_border"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/product_settings_variants1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/product_settings_variants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Варианты"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            app:fontFamily="@font/roboto_regular" />
+
+        <Button
+            android:id="@+id/product_settings_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Показать"
+            android:onClick="returnFoundProduct"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/custom_green"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/product_settings_variants2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_weight="1"
+        android:text="Куда добавить?"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/product_settings_storages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:divider="@color/white"
+        android:dividerHeight="9dp"
+        app:layout_constraintStart_toStartOf="@+id/product_settings_variants1"
+        app:layout_constraintTop_toTopOf="@+id/product_settings_variants1" />
+
+    <TextView
+        android:id="@+id/product_settings_variants3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Укажите срок годности"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toStartOf="@+id/product_settings_storages"
+        app:layout_constraintTop_toTopOf="@+id/product_settings_storages" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/product_settings_variants3"
+        app:layout_constraintTop_toTopOf="@+id/product_settings_variants3">
+
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 3 дня"
+                android:fontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:backgroundTint="@color/custom_yellow"
+                app:iconTint="@color/black" />
+
+            <Button
+                android:id="@+id/product_settings_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00.0000"
+                android:fontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:backgroundTint="@color/custom_yellow"
+                app:iconTint="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontWeight="700"
+                android:text="+ 14 дней"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:backgroundTint="@color/custom_yellow"
+                app:iconTint="@color/black" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontWeight="700"
+                android:text="Выбрать"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:backgroundTint="@color/custom_yellow"
+                android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                app:iconTint="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

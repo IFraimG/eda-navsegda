@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/custom_border.xml" value="0.1955" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.119" />
+        <entry key="app/src/main/res/drawable/custom_icon_storage.xml" value="0.132" />
+        <entry key="app/src/main/res/drawable/custom_round_border.xml" value="0.1955" />
+        <entry key="app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.204" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1185" />
         <entry key="app/src/main/res/drawable/star_background.xml" value="0.119" />
         <entry key="app/src/main/res/drawable/star_foreground.xml" value="0.119" />
@@ -12,11 +16,16 @@
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/fragment_adversitement.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19635416666666666" />
-        <entry key="app/src/main/res/layout/fragment_product.xml" value="0.23389129638671877" />
+        <entry key="app/src/main/res/layout/fragment_product.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_product_find.xml" value="0.3020833333333333" />
         <entry key="app/src/main/res/layout/fragment_products.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/home_page.xml" value="0.16111111111111112" />
         <entry key="app/src/main/res/layout/item_store.xml" value="0.46798909505208336" />
+        <entry key="app/src/main/res/layout/product_find.xml" value="0.22323303222656254" />
+        <entry key="app/src/main/res/layout/product_find_item.xml" value="0.25744018554687476" />
+        <entry key="app/src/main/res/layout/product_settings.xml" value="0.20800933837890628" />
+        <entry key="app/src/main/res/layout/storage_settings_item.xml" value="0.20186614990234383" />
         <entry key="app/src/main/res/menu/user_bottom_menu.xml" value="0.15092592592592594" />
       </map>
     </option>

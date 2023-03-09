@@ -1,13 +1,13 @@
 package com.example.edanavsegda.models;
 
-//public interface User {
-//
-//    public String fullName;
-//    public String email;
-//    public String phone;
-//    public String password;
-//
-//    public void createPost() {
-//
-//    }
-//}
+public class User implements UserIT {
+    public String fullname;
+    public String firstName;
+    public String secondName;
+    private String userID;
+    public String password;
+
+    public void createPost() {
+
+    }
+}

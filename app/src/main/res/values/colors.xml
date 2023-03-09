@@ -12,4 +12,9 @@
     <color name="custom_text_menu_color">#474A57</color>
     <color name="custom_green">#7FB414</color>
     <color name="custom_gray_select">#D9D9D9</color>
+    <color name="custom_yellow">#FFBD12</color>
+    <color name="custom_danger">#F95A2C</color>
+    <color name="custom_yellow_light">#FFD465</color>
+    <color name="custom_green_extra_light">#00C6AE</color>
+    <color name="custom_green_extra_extra_light">#75E8DA</color>
 </resources>
