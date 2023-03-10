@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.UUID;
 
 public class PostProduct extends Product {
-    public String title;
     protected String userID;
     protected String postID;
     public String description;
@@ -16,14 +15,12 @@ public class PostProduct extends Product {
     public String typeOfStorage = "none";
     public int storageID = 0;
 
-    public PostProduct(String title) {
-        super(title);
-        this.title = title;
+    public PostProduct(String name) {
+        super(name);
     }
 
-    public PostProduct(String title, String description, String location) {
-        super(title);
-        this.title = title;
+    public PostProduct(String name, String description, String location) {
+        super(name);
         this.description = description;
         this.location = location;
         this.dateSending = new Date();

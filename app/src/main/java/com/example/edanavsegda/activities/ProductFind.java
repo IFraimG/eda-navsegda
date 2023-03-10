@@ -28,6 +28,7 @@ public class ProductFind extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_find);
 
+
         EditText nameProduct = findViewById(R.id.findProductInput);
         nameProduct.addTextChangedListener(new TextWatcher() {
             @Override

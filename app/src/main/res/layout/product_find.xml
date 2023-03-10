@@ -63,7 +63,7 @@
             android:textSize="32dp"
             app:fontFamily="@font/roboto_regular" />
 
-<!-- будет появляться, если варианты существует при вводе-->
+<!-- будет появляться, если варианты существуют при вводе-->
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
